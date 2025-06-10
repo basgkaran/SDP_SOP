@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contracts & Purchases - ServiceDesk Plus</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: #f4f7fa; color: #333; }
+    header { background: #004aad; color: white; padding: 20px 40px; text-align: center; }
+    main { padding: 40px; max-width: 1200px; margin: auto; }
+    h2 { color: #004aad; margin-bottom: 20px; }
+    section { background: white; padding: 30px; margin-bottom: 30px; border-radius: 12px; box-shadow: 0 3px 8px rgba(0,0,0,0.05); }
+    .card { background: #f9fcff; border-left: 6px solid #004aad; padding: 15px; margin-top: 15px; }
+    footer { background: #003580; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contracts & Purchases - Module Deep Dive</h1>
+    <p>Track, manage, and get alerts on vendor contracts and purchase orders</p>
+  </header>
+<div style="padding: 15px;">
+  <a href="../index.html" style="text-decoration:none; font-weight:bold; color:#004aad;">← Home</a>
+</div>
+
+
+  <main>
+    <section>
+      <h2>Overview</h2>
+      <div class="card">
+        <p>This module helps IT teams manage contracts and purchases by offering central tracking, renewal alerts, association with assets, and PO lifecycle management.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Navigation – Full Paths</h2>
+      <div class="card">
+        <p><strong>Contracts:</strong> Assets → Contracts</p>
+        <p><strong>Purchase Orders:</strong> Assets → Purchase → All POs</p>
+        <p><strong>Vendor Management:</strong> Admin → Purchase & Contracts → Vendors</p>
+        <p><strong>Alert Setup:</strong> Admin → Asset Management → Contract Notification Rules</p>
+        <p><strong>PO Approval Rules:</strong> Admin → Purchase & Contracts → PO Approval Workflow</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Key Configurations</h2>
+      <div class="card">
+        <p><strong>Contract Types:</strong> Support, Warranty, Lease, Subscription. Helps filter and report.</p>
+      </div>
+      <div class="card">
+        <p><strong>Contract Fields:</strong> Track terms, renewal date, value, vendor contact, alerts, and associated assets.</p>
+      </div>
+      <div class="card">
+        <p><strong>PO Workflow:</strong> Multi-stage approvals, line items, vendor details, and status tracking (Draft → Issued → Received → Closed).</p>
+      </div>
+      <div class="card">
+        <p><strong>Vendor Profiles:</strong> Maintain contact info, contracts list, performance notes, and support SLAs.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Best Practices</h2>
+      <div class="card">
+        <p><strong>Use alerts 30/60/90 days in advance:</strong> Avoid surprise expiries by proactively tracking contract dates.</p>
+      </div>
+      <div class="card">
+        <p><strong>Link contracts to assets:</strong> Track coverage and dependencies for devices and services.</p>
+      </div>
+      <div class="card">
+        <p><strong>Classify vendors:</strong> Use tags like “Tier 1 Vendor”, “Recurring”, etc. for better governance.</p>
+      </div>
+      <div class="card">
+        <p><strong>Standardize PO templates:</strong> Ensure all POs follow a structured format with key sections like payment terms, delivery SLAs.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Risks & Mitigation</h2>
+      <div class="card">
+        <p><strong>Missed renewals:</strong> Enable and test alert configurations. Use backup emails if primary recipient is on leave.</p>
+      </div>
+      <div class="card">
+        <p><strong>PO status mismatch:</strong> Enforce updates when materials are received to close open POs.</p>
+      </div>
+      <div class="card">
+        <p><strong>Unlinked contracts:</strong> May impact audit and traceability. Always link assets, POs, and vendors.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Technician/Admin View</h2>
+      <div class="card">
+        <p>Technicians track POs and update delivery status. Admins manage contract renewals, vendor compliance, and receive alerts for actionable renewals.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ITSM Implementation Portal – All rights reserved.</p>
+  </footer>
+</body>
+</html>
