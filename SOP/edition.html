@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edition Comparison - ServiceDesk Plus</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f4f7fa;
+      color: #333;
+    }
+    header {
+      background: #004aad;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    }
+    main {
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    h2 {
+      color: #004aad;
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    th, td {
+      text-align: left;
+      padding: 12px 16px;
+      border-bottom: 1px solid #eee;
+    }
+    th {
+      background: #004aad;
+      color: #fff;
+    }
+    tr:hover {
+      background: #f1f5fb;
+    }
+    .note {
+      margin-top: 30px;
+      background: #e6f0ff;
+      padding: 16px;
+      border-left: 5px solid #004aad;
+      border-radius: 6px;
+    }
+    a {
+      color: #004aad;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Edition Comparison</h1>
+    <p>Understand the differences between Standard, Professional, and Enterprise Editions</p>
+  </header>
+
+  <main>
+    <h2>Feature Comparison Table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Feature Category</th>
+          <th>Standard</th>
+          <th>Professional</th>
+          <th>Enterprise</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Incident Management</td><td>✅</td><td>✅</td><td>✅</td></tr>
+        <tr><td>Problem, Change, CMDB</td><td>❌</td><td>✅</td><td>✅</td></tr>
+        <tr><td>Release, Project, Service Catalog</td><td>❌</td><td>❌</td><td>✅</td></tr>
+        <tr><td>Asset Management</td><td>❌</td><td>✅</td><td>✅</td></tr>
+        <tr><td>CMDB (Advanced)</td><td>❌</td><td>✅</td><td>✅</td></tr>
+        <tr><td>Service Catalog</td><td>❌</td><td>❌</td><td>✅</td></tr>
+        <tr><td>Projects & Milestones</td><td>❌</td><td>❌</td><td>✅</td></tr>
+        <tr><td>Purchase & Contracts</td><td>❌</td><td>✅</td><td>✅</td></tr>
+        <tr><td>Multi-site Support</td><td>❌</td><td>✅</td><td>✅</td></tr>
+        <tr><td>Request Life Cycle (RLC)</td><td>❌</td><td>✅</td><td>✅</td></tr>
+        <tr><td>Custom Modules</td><td>❌</td><td>❌</td><td>✅</td></tr>
+        <tr><td>Field Service Management</td><td>❌</td><td>❌</td><td>✅</td></tr>
+        <tr><td>Advanced Analytics (Zoho Analytics)</td><td>❌</td><td>Optional</td><td>Optional</td></tr>
+        <tr><td>Integrations & API</td><td>Basic</td><td>More supported</td><td>Extensive</td></tr>
+      </tbody>
+    </table>
+
+    <div class="note">
+      <h3>When to Choose Which Edition</h3>
+      <ul>
+        <li><strong>Standard:</strong> Best for small IT teams focused on basic incident handling.</li>
+        <li><strong>Professional:</strong> Ideal for mid-sized teams needing asset and change visibility.</li>
+        <li><strong>Enterprise:</strong> Designed for mature ITSM operations with full ITIL and automation needs.</li>
+      </ul>
+    </div>
+  </main>
+</body>
+</html>

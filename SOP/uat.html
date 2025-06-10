@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UAT & Go-Live - ServiceDesk Plus</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: #f4f7fa; color: #333; }
+    header { background: #004aad; color: white; padding: 20px 40px; text-align: center; }
+    main { padding: 40px; max-width: 1200px; margin: auto; }
+    h2 { color: #004aad; margin-bottom: 20px; }
+    section { background: white; padding: 30px; margin-bottom: 30px; border-radius: 12px; box-shadow: 0 3px 8px rgba(0,0,0,0.05); }
+    .card { background: #f9fcff; border-left: 6px solid #004aad; padding: 15px; margin-top: 15px; }
+    footer { background: #003580; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>UAT & Go-Live - Phase Execution</h1>
+    <p>Plan, test, and transition smoothly into live operations</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>UAT Preparation</h2>
+      <div class="card">
+        <p><strong>Test Scenarios:</strong> Build UAT cases covering all request flows, SLAs, automation, approvals, assets, and service catalog items.</p>
+      </div>
+      <div class="card">
+        <p><strong>UAT Users:</strong> Assign testers from each key department (IT, HR, Facilities) and document roles for evaluation.</p>
+      </div>
+      <div class="card">
+        <p><strong>Checklists:</strong> Provide a dry-run checklist with expected outcomes and review points.</p>
+      </div>
+      <div class="card">
+        <p><strong>Feedback Capture:</strong> Use Excel or Google Forms to record issues and improvement suggestions.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Go-Live Readiness</h2>
+      <div class="card">
+        <p><strong>Admin Lock:</strong> Freeze configuration changes once UAT is signed off to prevent regressions.</p>
+      </div>
+      <div class="card">
+        <p><strong>Data Cleanup:</strong> Remove test tickets, dummy assets, and stale users from UAT.</p>
+      </div>
+      <div class="card">
+        <p><strong>Final Sync:</strong> Import fresh requester/asset/user data into production environment.</p>
+      </div>
+      <div class="card">
+        <p><strong>Production Launch Communication:</strong> Notify all stakeholders with go-live date, what’s changing, and whom to contact for support.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Initial Post-Go-Live Monitoring</h2>
+      <div class="card">
+        <p><strong>Daily Checks:</strong> Track SLAs, request volumes, auto-assignments, and escalations daily for the first 2 weeks.</p>
+      </div>
+      <div class="card">
+        <p><strong>Feedback Loop:</strong> Accept change requests with strict tracking (avoid scope creep in early weeks).</p>
+      </div>
+      <div class="card">
+        <p><strong>Weekly Status Calls:</strong> Monitor adoption KPIs and action fixes quickly.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Best Practices</h2>
+      <div class="card">
+        <p><strong>Use a versioned release plan:</strong> Rollout in phases (e.g., Core modules first, then advanced features).</p>
+      </div>
+      <div class="card">
+        <p><strong>Always take backup exports:</strong> Save UAT configuration, templates, and user imports before switching to production.</p>
+      </div>
+      <div class="card">
+        <p><strong>Log early change requests:</strong> Keep a backlog of enhancements for version 2.0 instead of modifying live setup continuously.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ITSM Implementation Portal – All rights reserved.</p>
+  </footer>
+</body>
+</html>

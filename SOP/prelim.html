@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Preliminary Setup - ServiceDesk Plus</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: #f4f7fa; color: #333; }
+    header { background: #004aad; color: white; padding: 20px 40px; text-align: center; }
+    nav { display: flex; flex-wrap: wrap; justify-content: center; background: #003580; }
+    nav a { color: #fff; text-decoration: none; padding: 14px 20px; display: block; transition: background 0.3s; }
+    nav a:hover { background: #002b66; }
+    main { padding: 40px; max-width: 1200px; margin: auto; }
+    section { background: white; padding: 30px; margin-bottom: 30px; border-radius: 12px; box-shadow: 0 3px 8px rgba(0,0,0,0.05); }
+    h2 { color: #004aad; }
+    .card { background: #f9fcff; border-left: 6px solid #004aad; padding: 15px; margin-top: 15px; }
+    footer { background: #003580; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Preliminary Configuration</h1>
+    <p>Checklist to prepare your environment and stakeholders before implementation</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="edition.html">Edition Comparison</a>
+    <a href="prelim.html">Preliminary Setup</a>
+    <a href="index.html#modules">Modules</a>
+    <a href="uat.html">UAT & Go-Live</a>
+    <a href="training.html">Training</a>
+    <a href="postlive.html">Post Go-Live</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Environment & Access</h2>
+      <div class="card"><strong>Tenant Setup:</strong> Ensure your SDP Cloud environment is provisioned with admin login.</div>
+      <div class="card"><strong>Credential Readiness:</strong> Collect admin and integration account credentials securely.</div>
+    </section>
+
+    <section>
+      <h2>Stakeholder Alignment</h2>
+      <div class="card"><strong>SPOCs:</strong> Appoint single points of contact from IT, HR, Facilities, and Security teams.</div>
+      <div class="card"><strong>Kickoff Call:</strong> Schedule and conduct to finalize timelines, owners, and responsibilities.</div>
+    </section>
+
+    <section>
+      <h2>Legacy System Audit</h2>
+      <div class="card"><strong>Source Data:</strong> Export requester and ticket data from Jira/ServiceNow/Email systems.</div>
+      <div class="card"><strong>Data Format:</strong> Ensure fields align with SDP import format. Clean up duplicates and nulls.</div>
+    </section>
+
+    <section>
+      <h2>Data Preparation</h2>
+      <div class="card"><strong>Requester Sheet:</strong> Format employee details (Name, Email, Department, Site).</div>
+      <div class="card"><strong>Technician Sheet:</strong> Map roles and assign to modules/groups accordingly.</div>
+    </section>
+
+    <section>
+      <h2>Core Configuration Inputs</h2>
+      <div class="card"><strong>Sites & Departments:</strong> Create per-location structure in advance for SLAs and approvals.</div>
+      <div class="card"><strong>Business Hours:</strong> Set up working calendars and holidays to define SLA windows.</div>
+      <div class="card"><strong>Issue/Service Categories:</strong> Gather functional classifications with parent-child format.</div>
+    </section>
+
+    <section>
+      <h2>Discovery & Asset Prep</h2>
+      <div class="card"><strong>Asset Import:</strong> Collect device inventory (via Endpoint Central, AD, or CSV).</div>
+      <div class="card"><strong>Asset Classification:</strong> Define categories like Laptop, Server, Switch, License, etc.</div>
+    </section>
+
+    <section>
+      <h2>Risks to Avoid</h2>
+      <div class="card"><strong>Late Data Submission:</strong> Can delay system provisioning and test runs.</div>
+      <div class="card"><strong>Unclear SPOCs:</strong> Results in miscommunication during build and go-live support.</div>
+      <div class="card"><strong>Category Confusion:</strong> Broad categories lead to misrouted tickets — be specific!</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ITSM Implementation Portal – All rights reserved.</p>
+  </footer>
+</body>
+</html>

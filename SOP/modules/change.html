@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Change Management - ServiceDesk Plus</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: #f4f7fa; color: #333; }
+    header { background: #004aad; color: white; padding: 20px 40px; text-align: center; }
+    main { padding: 40px; max-width: 1200px; margin: auto; }
+    h2 { color: #004aad; margin-bottom: 20px; }
+    section { background: white; padding: 30px; margin-bottom: 30px; border-radius: 12px; box-shadow: 0 3px 8px rgba(0,0,0,0.05); }
+    .card { background: #f9fcff; border-left: 6px solid #004aad; padding: 15px; margin-top: 15px; }
+    footer { background: #003580; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Change Management - Module Deep Dive</h1>
+    <p>Structure, evaluate, and implement changes with minimal risk</p>
+  </header>
+<div style="padding: 15px;">
+  <a href="../index.html" style="text-decoration:none; font-weight:bold; color:#004aad;">← Home</a>
+</div>
+
+
+  <main>
+    <section>
+      <h2>Overview</h2>
+      <div class="card">
+        <p>The Change Management module enables organizations to request, assess, approve, and implement changes in a controlled and auditable manner. It supports workflows, CAB reviews, risk assessments, and rollbacks.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Navigation – Full Paths</h2>
+      <div class="card">
+        <p><strong>Change Dashboard:</strong> Changes → All Changes</p>
+        <p><strong>Change Template:</strong> Admin → Change Management → Templates</p>
+        <p><strong>Change Workflow:</strong> Admin → Change Management → Change Workflow</p>
+        <p><strong>Stage Settings:</strong> Admin → Change Management → Stages and Status</p>
+        <p><strong>CAB Configuration:</strong> Admin → Change Management → Change Advisory Board</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Key Configurations</h2>
+      <div class="card">
+        <p><strong>Change Templates:</strong> Define structured change request forms based on change type (Standard, Emergency, Normal, Major).</p>
+      </div>
+      <div class="card">
+        <p><strong>Change Workflow:</strong> Visual drag-and-drop builder to map stages (Submission → Review → Approval → Implementation → Post-review).</p>
+      </div>
+      <div class="card">
+        <p><strong>CAB Roles:</strong> Define CAB members, their responsibilities, and schedule meetings with automated reminders.</p>
+      </div>
+      <div class="card">
+        <p><strong>Approval Phases:</strong> Multi-stage approvals with conditional logic based on risk, impact, or change category.</p>
+      </div>
+      <div class="card">
+        <p><strong>Rollback Plan:</strong> Include fallback steps for each implementation in case the change fails.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Best Practices</h2>
+      <div class="card">
+        <p><strong>Use a Standard Change Template:</strong> For frequently approved, low-risk changes (e.g., password reset policy updates).</p>
+      </div>
+      <div class="card">
+        <p><strong>Integrate with CMDB:</strong> Always link changes to affected Configuration Items for better impact analysis.</p>
+      </div>
+      <div class="card">
+        <p><strong>Track Metrics:</strong> Use KPIs like Change Success Rate, Emergency Change Count, and CAB Review Turnaround.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Risks & Mitigation</h2>
+      <div class="card">
+        <p><strong>Skipped Approvals:</strong> Can cause unauthorized changes. Use mandatory stage settings.</p>
+      </div>
+      <div class="card">
+        <p><strong>Incomplete Implementation Plans:</strong> Risk of failure. Templates should mandate pre-checks and post-implementation steps.</p>
+      </div>
+      <div class="card">
+        <p><strong>Overused Emergency Changes:</strong> Indicates poor planning. Track root causes and push back into planned changes.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Technician/Admin View</h2>
+      <div class="card">
+        <p>Technicians can raise, track, and execute changes. Admins define workflows, configure CABs, and monitor compliance across the change lifecycle.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ITSM Implementation Portal – All rights reserved.</p>
+  </footer>
+</body>
+</html>

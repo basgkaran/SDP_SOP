@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CMDB - ServiceDesk Plus</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: #f4f7fa; color: #333; }
+    header { background: #004aad; color: white; padding: 20px 40px; text-align: center; }
+    main { padding: 40px; max-width: 1200px; margin: auto; }
+    h2 { color: #004aad; margin-bottom: 20px; }
+    section { background: white; padding: 30px; margin-bottom: 30px; border-radius: 12px; box-shadow: 0 3px 8px rgba(0,0,0,0.05); }
+    .card { background: #f9fcff; border-left: 6px solid #004aad; padding: 15px; margin-top: 15px; }
+    footer { background: #003580; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CMDB - Module Deep Dive</h1>
+    <p>Define, relate, and manage Configuration Items (CIs) for better IT control</p>
+  </header>
+
+<div style="padding: 15px;">
+  <a href="../index.html" style="text-decoration:none; font-weight:bold; color:#004aad;">← Home</a>
+</div>
+
+
+
+  <main>
+    <section>
+      <h2>Overview</h2>
+      <div class="card">
+        <p>The CMDB in ServiceDesk Plus helps document, map, and track all Configuration Items (CIs) such as servers, applications, and business services along with their interdependencies.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Navigation – Full Paths</h2>
+      <div class="card">
+        <p><strong>CMDB Dashboard:</strong> CMDB → All CIs</p>
+        <p><strong>Add CI Types:</strong> Admin → CMDB → CI Types</p>
+        <p><strong>Add Relationships:</strong> Admin → CMDB → Relationship Types</p>
+        <p><strong>Import CIs:</strong> CMDB → Import → From CSV</p>
+        <p><strong>Dependency Map:</strong> CMDB → CI View → Dependency Map</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Key Configurations</h2>
+      <div class="card">
+        <p><strong>CI Types:</strong> Classify as Server, Network, Application, Database, etc. Define custom attributes for each type.</p>
+      </div>
+      <div class="card">
+        <p><strong>CI Attributes:</strong> Define technical and business attributes like IP, location, criticality, owner, and vendor.</p>
+      </div>
+      <div class="card">
+        <p><strong>Relationship Types:</strong> Define relationships like “Runs On”, “Depends On”, “Backed Up By” for mapping.</p>
+      </div>
+      <div class="card">
+        <p><strong>Dependency Mapping:</strong> Visualize CI relationships and service impact. Useful for RCA and Change Planning.</p>
+      </div>
+      <div class="card">
+        <p><strong>CI Lifecycle:</strong> Track CI statuses: In Use, In Maintenance, Retired. Align with change history and ticket associations.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Best Practices</h2>
+      <div class="card">
+        <p><strong>Keep the CI scope limited:</strong> Start with core infrastructure and grow gradually.</p>
+      </div>
+      <div class="card">
+        <p><strong>Use automation:</strong> Pull CI data from discovery or integrations with asset tools like Endpoint Central.</p>
+      </div>
+      <div class="card">
+        <p><strong>Maintain clear relationships:</strong> Helps with RCA and understanding service impact during outages.</p>
+      </div>
+      <div class="card">
+        <p><strong>Tag changes to CIs:</strong> Ensure every Change/Incident is linked to a CI wherever applicable.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Risks & Mitigation</h2>
+      <div class="card">
+        <p><strong>Too many CI Types:</strong> May cause clutter. Focus on core types with real IT impact first.</p>
+      </div>
+      <div class="card">
+        <p><strong>Missing relationships:</strong> Affects impact analysis. Encourage CI owners to update maps during changes.</p>
+      </div>
+      <div class="card">
+        <p><strong>Data Drift:</strong> CI details can become outdated. Sync CMDB with asset scans or scheduled reviews.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Technician View</h2>
+      <div class="card">
+        <p>Technicians can view CIs linked to tickets, assess risk/impact, and log updates. Dependency maps assist during outages and escalations.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Admin View</h2>
+      <div class="card">
+        <p>Admins create CI types, relationships, import CI data, and manage visual dependency graphs. They ensure data integrity and CI associations with changes/incidents.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ITSM Implementation Portal – All rights reserved.</p>
+  </footer>
+</body>
+</html>

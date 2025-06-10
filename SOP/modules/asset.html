@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Asset Management - ServiceDesk Plus</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: #f4f7fa; color: #333; }
+    header { background: #004aad; color: white; padding: 20px 40px; text-align: center; }
+    main { padding: 40px; max-width: 1200px; margin: auto; }
+    h2 { color: #004aad; margin-bottom: 20px; }
+    section { background: white; padding: 30px; margin-bottom: 30px; border-radius: 12px; box-shadow: 0 3px 8px rgba(0,0,0,0.05); }
+    .card { background: #f9fcff; border-left: 6px solid #004aad; padding: 15px; margin-top: 15px; }
+    footer { background: #003580; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Asset Management - Module Deep Dive</h1>
+    <p>Discover, track, and manage IT and non-IT assets efficiently</p>
+  </header>
+<div style="padding: 15px;">
+  <a href="../index.html" style="text-decoration:none; font-weight:bold; color:#004aad;">← Home</a>
+</div>
+
+
+  <main>
+    <section>
+      <h2>Overview</h2>
+      <div class="card">
+        <p>The Asset Management module allows organizations to maintain a centralized inventory of hardware, software, and non-IT assets. It supports discovery, life cycle tracking, licensing, and asset relationships.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Navigation – Full Paths</h2>
+      <div class="card">
+        <p><strong>Asset List:</strong> Assets → All Assets</p>
+        <p><strong>Discovery Setup:</strong> Admin → Asset Management → Discovery</p>
+        <p><strong>Software Management:</strong> Assets → Software → Manage Software</p>
+        <p><strong>Import from CSV:</strong> Assets → Import from CSV</p>
+        <p><strong>Scan Now:</strong> Assets → Scan Systems</p>
+        <p><strong>License Management:</strong> Assets → Software Licenses</p>
+        <p><strong>Contracts & Warranty:</strong> Admin → Asset Management → Contracts</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Key Configurations</h2>
+      <div class="card">
+        <p><strong>Asset Types:</strong> Classify assets as IT (laptops, desktops, routers) or Non-IT (furniture, vehicles). Helps with visibility and reporting.</p>
+      </div>
+      <div class="card">
+        <p><strong>Asset Discovery:</strong> Use agent-based or network scan for auto-discovery. Recommended to deploy agents for laptops/desktops across sites.</p>
+      </div>
+      <div class="card">
+        <p><strong>Ownership Mapping:</strong> Assign users to assets to track movement and accountability.</p>
+      </div>
+      <div class="card">
+        <p><strong>Software License Compliance:</strong> Track installations vs purchased count. Set alerts for overuse or expiry.</p>
+      </div>
+      <div class="card">
+        <p><strong>Contracts & Warranty:</strong> Upload contracts and map to assets. Get alerts 30/60/90 days prior to expiry.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Best Practices</h2>
+      <div class="card">
+        <p><strong>Define Naming Conventions:</strong> Use prefixes like LAP-101, SRV-502 for traceability.</p>
+      </div>
+      <div class="card">
+        <p><strong>Schedule Scans:</strong> Weekly scans help identify changes and avoid shadow IT risks.</p>
+      </div>
+      <div class="card">
+        <p><strong>Use Location/Site Mapping:</strong> For better access control and tracking per region.</p>
+      </div>
+      <div class="card">
+        <p><strong>Tag End-of-Life Assets:</strong> Automate workflows for decommissioning.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Risks and Mitigation</h2>
+      <div class="card">
+        <p><strong>Duplicate Assets:</strong> May result from CSV import and scans. Use deduplication rules.</p>
+      </div>
+      <div class="card">
+        <p><strong>License Non-Compliance:</strong> Risk of audit failure. Always track installs vs entitlement.</p>
+      </div>
+      <div class="card">
+        <p><strong>Unassigned Assets:</strong> Poor accountability. Link users to each asset for traceability.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>End-User View</h2>
+      <div class="card">
+        <p>End users may view assigned assets via the portal. Access is read-only and limited to their own items.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Technician/Admin View</h2>
+      <div class="card">
+        <p>Admins manage asset data, run reports, update license compliance, monitor warranties, and receive alerts. Technicians can use the asset info for faster ticket resolution.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ITSM Implementation Portal – All rights reserved.</p>
+  </footer>
+</body>
+</html>
